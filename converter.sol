@@ -11,6 +11,7 @@ contract Converter {
   bytes32 hash;
   return address(uint160(uint256(hash)));
 
-
+//=============FROM STRING/bytes/32=============
+bytes4(keccak256(bytes(_func)));
 
 }
