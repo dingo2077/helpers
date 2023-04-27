@@ -14,4 +14,11 @@ contract Converter {
 //=============FROM STRING/bytes/32=============
 bytes4(keccak256(bytes(_func)));
 
+
+//=============FROM uint/int to BYTES=============
+int64 makerFeeRate = 1;
+int64 takerFeeRate = 1;
+uint64 expiration = 100;
+uint64 nonce = 1;
+bytes32 info2 = bytes32(bytes(abi.encode(makerFeeRate,takerFeeRate,expiration,nonce)));
 }
